@@ -1,26 +1,27 @@
 // import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from './components/Header'
-import Component from './components/challenges/day1/Component'
-import Home from './components/Home'
 import Footer from './components/Footer'
+import Sidebar from './components/Sidebar'
+import FunctionalComponentDemo from './components/FunctionalComponentDemo'
+import{
+  BrowserRouter as Router,
+} from 'react-router-dom';
 
-function App() {
 
-  const name = 'Jessica';
-
+const App = () => {
   return (
-   <div className="App">
-     <h1>Welcome to React, {name}</h1>
-     <h2>We just modified our root App component</h2>
-     <Header />
-     <Component />
-     <Home />
-     <Footer />
-   </div>
-   
+    <div>
+      <Header />
+      <Router>
+        <Sidebar />
+      </Router>
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
 
