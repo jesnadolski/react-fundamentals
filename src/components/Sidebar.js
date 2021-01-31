@@ -9,6 +9,7 @@ import FunctionalComponentDemo from './FunctionalComponentDemo';
 import JSXRules from './JSXRules';
 import State from './State';
 import Effects from "./Effects";
+import PropsDemo from "./PropsDemo";
 
 const Sidebar = () => {
     return (
@@ -21,6 +22,7 @@ const Sidebar = () => {
                 <li><Link to ="/JSXRules">JSX Rules</Link></li>
                 <li><Link to="/State">useState</Link></li>
                 <li><Link to="/Effects">useEffect</Link></li>
+                <li><Link to="/PropsDemo">Props</Link></li>
             </ul>
         </div>
         <div className="sidebar-route">
@@ -32,6 +34,7 @@ const Sidebar = () => {
                 <Route exact path="/JSXRules"><JSXRules /></Route>
                 <Route exact path="/State"><State /></Route>
                 <Route exact path="/Effects"><Effects /></Route>
+                <Route exact path="/PropsDemo"><PropsDemo /></Route>
             </Switch>
         </div>
         </div>
