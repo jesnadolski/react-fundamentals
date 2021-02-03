@@ -10,6 +10,7 @@ import JSXRules from './JSXRules';
 import State from './State';
 import Effects from "./Effects";
 import PropsDemo from "./PropsDemo";
+import Hooks from "./Hooks";
 
 const Sidebar = () => {
     return (
@@ -23,6 +24,7 @@ const Sidebar = () => {
                 <li><Link to="/State">useState</Link></li>
                 <li><Link to="/Effects">useEffect</Link></li>
                 <li><Link to="/PropsDemo">Props</Link></li>
+                <li><Link to="/Hooks">Hooks</Link></li>
             </ul>
         </div>
         <div className="sidebar-route">
@@ -35,6 +37,7 @@ const Sidebar = () => {
                 <Route exact path="/State"><State /></Route>
                 <Route exact path="/Effects"><Effects /></Route>
                 <Route exact path="/PropsDemo"><PropsDemo /></Route>
+                <Route exact path="/Hooks"><Hooks /></Route>
             </Switch>
         </div>
         </div>
