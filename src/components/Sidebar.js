@@ -11,6 +11,8 @@ import State from './State';
 import Effects from "./Effects";
 import PropsDemo from "./PropsDemo";
 import Hooks from "./Hooks";
+import TimePiecesApp from "./apps/timer-apps/TimePiecesApp";
+
 
 const Sidebar = () => {
     return (
@@ -25,6 +27,7 @@ const Sidebar = () => {
                 <li><Link to="/Effects">useEffect</Link></li>
                 <li><Link to="/PropsDemo">Props</Link></li>
                 <li><Link to="/Hooks">Hooks</Link></li>
+                <li><Link to="/timer">Timers</Link></li>
             </ul>
         </div>
         <div className="sidebar-route">
@@ -38,6 +41,7 @@ const Sidebar = () => {
                 <Route exact path="/Effects"><Effects /></Route>
                 <Route exact path="/PropsDemo"><PropsDemo /></Route>
                 <Route exact path="/Hooks"><Hooks /></Route>
+                <Route exact path="/timer"><TimePiecesApp /></Route>
             </Switch>
         </div>
         </div>
