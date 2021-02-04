@@ -30,10 +30,10 @@ const handleSubmit = (event) => {
 }
 
 const changePageNumber = (event, direction) => {
-    event.preventDefault();
+    event.preventDefault()
     if(direction === 'down') {
       if(pageNumber > 0) {
-        setPageNumber(pageNumber + 1);
+        setPageNumber(pageNumber - 1);
           fetchResults();
         }
       }
